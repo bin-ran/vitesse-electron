@@ -12,7 +12,8 @@
         "arch": ["x64"]
       }
     ],
-    "artifactName": "${productName}-${version}-Setup.${ext}"
+    "artifactName": "${productName}-${version}-Setup.${ext}",
+    "icon": "public/favicon.ico"
   },
   "nsis": {
     "oneClick": false,
