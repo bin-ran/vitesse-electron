@@ -7,13 +7,11 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import electron from 'vite-plugin-electron/simple'
 
 // https://vite.dev/config/
-export default defineConfig(() => {
-  return {
-    plugins: [
-      VueRouter(),
-      vue(),
-      vueDevTools(),
-      UnoCSS(),
+export default defineConfig(({ mode }) => {
+  const plugins = [VueRouter(), vue(), vueDevTools(), UnoCSS()]
+
+  if (mode === 'electron') {
+    plugins.push(
       electron({
         main: {
           // Shortcut of `build.lib.entry`
@@ -26,7 +24,11 @@ export default defineConfig(() => {
         // Optional: Use Node.js API in the Renderer process
         renderer: {},
       }),
-    ],
+    )
+  }
+
+  return {
+    plugins,
     resolve: {
       alias: {
         '@': fileURLToPath(new URL('./src', import.meta.url)),

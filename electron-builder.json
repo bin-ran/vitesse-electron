@@ -1,6 +1,6 @@
 {
-  "appId": "cn.binran.clock",
-  "productName": "Clock",
+  "appId": "cn.binran.vitesse.electron",
+  "productName": "Vitesse.Electron",
   "directories": {
     "output": "release/${version}"
   },

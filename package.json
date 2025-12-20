@@ -15,10 +15,10 @@
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix",
     "format": "prettier --write src/",
-    "electron:dev": "vite",
-    "electron:build": "vue-tsc --build && vite build",
-    "electron:preview": "electron-builder --dir",
-    "electron:pack": "npm run electron:build && electron-builder"
+    "electron:dev": "vite --mode electron",
+    "electron:build": "vue-tsc --build && vite build  --mode electron",
+    "electron:preview": "electron-builder --dir --mode electron",
+    "electron:pack": "npm run electron:build && electron-builder --mode electron"
   },
   "dependencies": {
     "@unocss/reset": "^66.5.10",
@@ -53,6 +53,6 @@
     "vite-plugin-electron": "^0.29.0",
     "vite-plugin-electron-renderer": "^0.14.6",
     "vite-plugin-vue-devtools": "^8.0.5",
-    "vue-tsc": "^3.1.8"
+    "vue-tsc": "^3.2.0"
   }
 }
