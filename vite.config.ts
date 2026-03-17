@@ -35,10 +35,19 @@ export default defineConfig(({ mode }) => {
       },
     },
     build: {
-      rollupOptions: {
+      rolldownOptions: {
         output: {
-          manualChunks: {
-            vue: ['vue', 'vue-router', 'pinia'],
+          codeSplitting: {
+            groups: [
+              {
+                name: 'vue',
+                test: /node_modules\/vue/,
+              },
+              {
+                name: 'pinia',
+                test: /node_modules\/pinia/,
+              },
+            ],
           },
         },
       },
