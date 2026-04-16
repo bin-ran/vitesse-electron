@@ -21,38 +21,38 @@
     "electron:pack": "npm run electron:build && electron-builder --mode electron"
   },
   "dependencies": {
-    "@unocss/reset": "^66.6.6",
+    "@unocss/reset": "^66.6.8",
     "@vueuse/core": "^14.2.1",
     "canvas-confetti": "^1.9.4",
     "js-cookie": "^3.0.5",
     "pinia": "^3.0.4",
-    "vue": "^3.5.30",
-    "vue-router": "^5.0.3"
+    "vue": "^3.5.32",
+    "vue-router": "^5.0.4"
   },
   "devDependencies": {
-    "@iconify-json/carbon": "^1.2.19",
+    "@iconify-json/carbon": "^1.2.20",
     "@tsconfig/node-lts": "^24.0.0",
     "@types/canvas-confetti": "^1.9.0",
     "@types/js-cookie": "^3.0.6",
-    "@types/node": "^25.5.0",
-    "@vitejs/plugin-vue": "^6.0.5",
+    "@types/node": "^25.6.0",
+    "@vitejs/plugin-vue": "^6.0.6",
     "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/eslint-config-typescript": "^14.7.0",
-    "@vue/tsconfig": "^0.9.0",
-    "electron": "^41.0.2",
+    "@vue/tsconfig": "^0.9.1",
+    "electron": "^41.2.1",
     "electron-builder": "^26.8.1",
-    "eslint": "^10.0.3",
+    "eslint": "^10.2.0",
     "eslint-plugin-vue": "~10.8.0",
     "jiti": "^2.6.1",
     "npm-run-all2": "^8.0.4",
     "prettier": "3.6.2",
-    "typescript": "~5.9.3",
-    "unocss": "^66.6.6",
+    "typescript": "~6.0.2",
+    "unocss": "^66.6.8",
     "unplugin-vue-router": "^0.19.2",
-    "vite": "^8.0.0",
+    "vite": "^8.0.8",
     "vite-plugin-electron": "^0.29.1",
     "vite-plugin-electron-renderer": "^0.14.6",
-    "vite-plugin-vue-devtools": "^8.1.0",
-    "vue-tsc": "^3.2.5"
+    "vite-plugin-vue-devtools": "^8.1.1",
+    "vue-tsc": "^3.2.6"
   }
 }
