@@ -1,3 +1,13 @@
+allowBuilds:
+  electron: true
+  electron-winstaller: true
+  esbuild: true
+minimumReleaseAgeExclude:
+  - app-builder-lib@26.15.2
+  - dmg-builder@26.15.2
+  - electron-builder-squirrel-windows@26.15.2
+  - electron-builder@26.15.2
+  - electron-publish@26.15.1
 onlyBuiltDependencies:
   - electron
   - electron-winstaller
