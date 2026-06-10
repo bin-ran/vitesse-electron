@@ -16,9 +16,8 @@
     "lint": "eslint . --fix",
     "format": "prettier --write src/",
     "electron:dev": "vite --mode electron",
-    "electron:build": "vue-tsc --build && vite build  --mode electron",
-    "electron:preview": "electron-builder --dir --mode electron",
-    "electron:pack": "npm run electron:build && electron-builder --mode electron"
+    "electron:build": "vue-tsc --build && vite build --mode electron && electron-builder",
+    "electron:preview": "electron-builder --dir"
   },
   "dependencies": {
     "@unocss/reset": "^66.7.0",
@@ -39,7 +38,7 @@
     "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/eslint-config-typescript": "^14.8.0",
     "@vue/tsconfig": "^0.9.1",
-    "electron": "^42.3.3",
+    "electron": "^42.4.0",
     "electron-builder": "^26.15.2",
     "eslint": "^10.4.1",
     "eslint-plugin-vue": "~10.9.2",
@@ -53,6 +52,6 @@
     "vite-plugin-electron": "^1.0.4",
     "vite-plugin-electron-renderer": "^1.0.0",
     "vite-plugin-vue-devtools": "^8.1.2",
-    "vue-tsc": "^3.3.3"
+    "vue-tsc": "^3.3.4"
   }
 }

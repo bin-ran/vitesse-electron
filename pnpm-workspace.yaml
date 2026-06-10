@@ -8,6 +8,7 @@ minimumReleaseAgeExclude:
   - electron-builder-squirrel-windows@26.15.2
   - electron-builder@26.15.2
   - electron-publish@26.15.1
+  - electron@42.4.0
 onlyBuiltDependencies:
   - electron
   - electron-winstaller
