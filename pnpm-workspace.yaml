@@ -9,6 +9,8 @@ minimumReleaseAgeExclude:
   - electron-builder@26.15.2
   - electron-publish@26.15.1
   - electron@42.4.0
+  - '@vue/language-core@3.3.8'
+  - vue-tsc@3.3.8
 onlyBuiltDependencies:
   - electron
   - electron-winstaller
